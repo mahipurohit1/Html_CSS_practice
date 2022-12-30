@@ -6,9 +6,24 @@
 body {
   font-family: sans-serif;
   color: #444;
+  position: relative;
+  border-top: 5px solid #1098ad;
+}
+.container {
+  width: 800px;
+  margin: 0 auto;
 }
 nav {
   font-size: 18px;
+}
+
+nav a:link {
+  margin-right: 15px;
+  margin-top: 10px;
+  display: inline-block;
+}
+nav a:link:last-child {
+  margin-right: 0;
 }
 .main-header {
   background-color: #f7f7f7;
@@ -16,6 +31,7 @@ nav {
    */
   padding: 20px 40px;
   margin-bottom: 60px;
+  /* height: 80px; */
 }
 article {
   margin-bottom: 60px;
@@ -25,6 +41,7 @@ aside {
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
   padding: 50px 0;
+  width: 500px;
 }
 
 .post-header {
@@ -150,3 +167,50 @@ a:active {
 footer p {
   color: green !important;
 } */
+
+.post-img {
+  width: 100%;
+  height: auto;
+}
+
+.like {
+  font-size: 20px;
+  padding: 20px;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 10px;
+}
+
+/* p::first-line {
+  color: red;
+} */
+/* adjecent sibling  */
+/* 
+h3 + p::first-line {
+  color: yellowgreen;
+} */
+h2 {
+  /* background-color: #000; */
+  position: relative;
+}
+
+h2::after {
+  content: "TOP";
+  font-size: 14px;
+  font-weight: bold;
+  background-color: yellow;
+  display: inline-block;
+  padding: 8px 10px;
+  color: #444;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+p {
+  text-align: justify;
+}
