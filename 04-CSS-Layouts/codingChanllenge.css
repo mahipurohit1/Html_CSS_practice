@@ -82,10 +82,9 @@ header::after {
   margin-top: 10px;
 }
 .option div {
-  display: inline-block;
+  /* display: inline-block; */
 }
 .option div:first-child {
-  margin-left: 2px;
   border: 1px solid black;
   background-color: black;
   color: black;
@@ -115,7 +114,8 @@ header::after {
   background-color: brown;
   color: brown;
 }
-.price {
+/* float */
+/* .price {
   float: left;
   margin-bottom: 20px;
 }
@@ -144,4 +144,46 @@ header::after {
 }
 .option {
   margin-top: 20px;
+} */
+
+/* flex box */
+.option {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.option div:first-child {
+  margin-left: 2px;
+}
+.price-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.shipping {
+  margin-bottom: 0;
+}
+
+.main-content {
+  display: flex;
+  gap: 20px;
+}
+.product {
+  /* background-color: red; */
+
+  flex: 1;
+}
+.product-info {
+  /* background-color: green; */
+
+  flex: 1;
+}
+.shoe-img {
+  /* background-color: purple; */
+  height: 250px;
+}
+.clear {
+  margin-bottom: 20px;
 }

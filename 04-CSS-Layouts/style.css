@@ -52,7 +52,6 @@ aside {
   /* padding-top: 50px;
   padding-bottom: 50px; */
   padding: 40px 40px;
-  width: 500px;
 }
 
 /* SMALLER ELEMENTS */
@@ -200,7 +199,7 @@ nav a:link {
   display: block; */
 
   margin-right: 30px;
-  margin-top: 10px;
+
   display: inline-block;
 }
 
@@ -271,7 +270,7 @@ nav p {
 
 /* Floats  */
 
-.author-img {
+/* .author-img {
   float: left;
   margin-bottom: 20px;
 }
@@ -279,16 +278,16 @@ nav p {
   float: left;
   margin-left: 15px;
   margin-top: 15px;
-}
+} */
 
 /* this will create collapse height  */
-h1 {
+/* h1 {
   float: left;
 }
 
 nav {
   float: right;
-}
+} */
 
 /* way 1: create a empty div */
 /* .clear {
@@ -296,7 +295,7 @@ nav {
 } */
 /* way 2: create a after element */
 
-.clearfix::after {
+/* .clearfix::after {
   content: "";
   display: block;
   clear: both;
@@ -312,4 +311,55 @@ aside {
 }
 footer {
   clear: both;
+} */
+
+/* FLEX_BOX */
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.author-box {
+  display: flex;
+  margin-bottom: 15px;
+  align-items: center;
+}
+.author {
+  margin-bottom: 0;
+  margin-left: 15px;
+}
+
+.related li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.related-link:link {
+  margin-bottom: 8px;
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.related-author {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: italic;
+}
+.main-content {
+  display: flex;
+  gap: 75px;
+  margin-bottom: 60px;
+}
+
+article {
+  /* background-color: red; */
+  margin-bottom: 0;
+}
+aside {
+  align-self: flex-start;
+  flex: 0 0 300px;
+  /* background-color: red; */
 }
