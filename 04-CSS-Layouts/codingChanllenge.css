@@ -166,24 +166,31 @@ header::after {
   margin-bottom: 0;
 }
 
-.main-content {
+/* .main-content {
   display: flex;
   gap: 20px;
-}
-.product {
-  /* background-color: red; */
-
+} */
+/* .product {
   flex: 1;
 }
 .product-info {
-  /* background-color: green; */
-
   flex: 1;
 }
-.shoe-img {
-  /* background-color: purple; */
-  height: 250px;
-}
+
 .clear {
   margin-bottom: 20px;
+} */
+.shoe-img {
+  height: 250px;
+}
+.container {
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr;
+  column-gap: 40px;
+}
+header {
+  grid-column: 1/-1;
+}
+button {
+  grid-column: 1/-1;
 }
