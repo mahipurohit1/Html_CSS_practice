@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>layout</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 80px 400px 1fr 300px;
+        grid-template-rows: 80px 1fr;
+        font-size: 24px;
+        text-align: center;
+      }
+      nav {
+        background: rgb(128, 75, 75);
+        grid-row: 1/-1;
+        padding-top: 20px;
+      }
+      menu {
+        background-color: rgb(202, 129, 202);
+        grid-column: 2/-1;
+        display: flex;
+        gap: 20px;
+        font-weight: bold;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 20px;
+      }
+      .inbox {
+        background-color: #f7f7f72d;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 20px;
+        overflow: scroll;
+      }
+      .email {
+        background-color: rgb(84, 210, 219);
+        padding-top: 20px;
+      }
+      .info {
+        background-color: rgb(122, 218, 122);
+        padding-top: 20px;
+      }
+      button {
+        font-size: 20px;
+        background: rgb(80, 17, 80);
+        padding: 8px 16px;
+        border: 0 solid white;
+        color: white;
+      }
+      button:last-child {
+        background: rgb(216, 18, 18);
+        margin-left: auto;
+        margin-right: 20px;
+      }
+      .email-inbox {
+        font-size: 24px;
+        background: rgba(68, 68, 68, 0.664);
+        color: white;
+        height: 60px;
+        margin: 0 20px;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav>Nav</nav>
+      <menu>
+        <button>new</button>
+        <button>reply</button>
+
+        <button>mark unread</button>
+
+        <button>forward</button>
+
+        <button>trash</button>
+      </menu>
+      <div class="inbox">
+        <div class="email-inbox">email 1</div>
+        <div class="email-inbox">email 2</div>
+        <div class="email-inbox">email 3</div>
+        <div class="email-inbox">email 4</div>
+        <div class="email-inbox">email 5</div>
+        <div class="email-inbox">email 6</div>
+        <div class="email-inbox">email 7</div>
+        <div class="email-inbox">email 8</div>
+        <div class="email-inbox">email 9</div>
+        <div class="email-inbox">email 10</div>
+      </div>
+      <div class="email">email</div>
+      <div class="info">additional info</div>
+    </div>
+  </body>
+</html>
