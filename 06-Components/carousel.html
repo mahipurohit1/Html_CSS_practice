@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Accodion</title>
+    <title>carousel</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <style>
       * {
         margin: 0;
@@ -15,17 +19,129 @@
       body {
         font-family: "Inter", sans-serif;
         color: #343a40;
+        background: #f7f7f7;
       }
       .carousel {
         width: 900px;
         margin: 100px auto;
         background-color: #087f5b;
         border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+        position: relative;
+      }
+      img {
+        height: 250px;
+        width: 250px;
+        margin-left: 60px;
+        transform: scale(1.2);
+        border-radius: 12px;
+        box-shadow: 0px 0px 30px 0 rgba(0, 0, 0, 0.267);
+      }
+      .text {
+        font-size: 22px;
+        color: aliceblue;
+        margin-bottom: 30px;
+        line-height: 1.4;
+      }
+      .author {
+        font-size: 18px;
+        color: rgba(240, 248, 255, 0.897);
+      }
+      .job {
+        font-size: 16px;
+        color: rgba(240, 248, 255, 0.705);
+      }
+      .btn {
+        height: 32px;
+        width: 32px;
+        background: #fff;
+        border-radius: 50%;
+        cursor: pointer;
+        stroke: #087f5b;
+      }
+      .btn-left {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .btn-right {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(50%, -50%);
+      }
+      .dots {
+        display: flex;
+        gap: 20px;
+        position: absolute;
+        top: 110%;
+      }
+      .dot {
+        height: 10px;
+        width: 10px;
+
+        border-radius: 50%;
+        outline: 2px solid #087f5b;
+      }
+      .dot-filled {
+        background: #087f5b;
       }
     </style>
   </head>
   <body>
-    <div class="carousel"></div>
+    <div class="carousel">
+      <img src="maria.jpg" alt="" />
+      <div class="textonomial">
+        <p class="text">
+          "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
+          nesciunt aliquid ex atque quibusdam. Rerum officia unde suscipit quo
+          sunt hic illo fugit."
+        </p>
+        <p class="author">Maria de Almeida</p>
+        <p class="job">Senior Product Manager at EDP Comercial</p>
+      </div>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="btn btn-left"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M15.75 19.5L8.25 12l7.5-7.5"
+        />
+      </svg>
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="btn btn-right"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M8.25 4.5l7.5 7.5-7.5 7.5"
+        />
+      </svg>
+      <div class="dots">
+        <div class="dot dot-filled"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+
+        <div class="dot"></div>
+      </div>
+    </div>
+
     <script></script>
   </body>
 </html>
