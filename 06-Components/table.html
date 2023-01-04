@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>table</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* color: #087f5b; */
+      }
+      body {
+        font-family: "Inter", sans-serif;
+        color: #343a40;
+        background: #f7f7f7;
+        display: flex;
+        justify-content: center;
+      }
+      table {
+        width: 800px;
+        margin-top: 50px;
+        font-size: 18px;
+        /* border: 1px solid black; */
+        border-collapse: collapse;
+        /* margin: 50px auto; */
+
+        /* background-color: rgba(83, 223, 223, 0.932); */
+      }
+      th,
+      td {
+        padding: 16px 24px;
+        /* border: 1px solid rgba(0, 0, 0, 0.76); */
+        text-align: left;
+      }
+      thead th {
+        background-color: #087f5b;
+        color: white;
+        width: 25%;
+      }
+      tbody tr:nth-child(odd) {
+        background: #c6d5e6ad;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Chair</th>
+          <th>The Laid Back</th>
+          <th>The Worker Bee</th>
+          <th>The Chair 4/2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Width</th>
+          <td>80cm</td>
+          <td>60cm</td>
+          <td>220cm</td>
+        </tr>
+        <tr>
+          <th>Height</th>
+          <td>100cm</td>
+          <td>60cm</td>
+          <td>220cm</td>
+        </tr>
+        <tr>
+          <th>Depth</th>
+          <td>70cm</td>
+          <td>90cm</td>
+          <td>220cm</td>
+        </tr>
+        <tr>
+          <th>Weigth</th>
+          <td>18kg</td>
+          <td>50kg</td>
+          <td>218kg</td>
+        </tr>
+      </tbody>
+    </table>
+    <script></script>
+  </body>
+</html>
