@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>table</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* color: #087f5b; */
+      }
+      body {
+        font-family: "Inter", sans-serif;
+        color: #343a40;
+        background: #f7f7f7;
+      }
+      .page-number {
+        display: flex;
+        gap: 20px;
+        width: 800px;
+        margin: 200px auto;
+        font-size: 22px;
+
+        align-items: center;
+        justify-content: center;
+      }
+      .number:link {
+        height: 35px;
+        width: 35px;
+        display: flex;
+        color: #1a1c1f;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+      }
+      .num-selected:link {
+        color: #f7f7f7;
+        border-radius: 50%;
+        background-color: #087f5b;
+      }
+
+      .number:hover {
+        color: #f7f7f7;
+        border-radius: 50%;
+        background-color: #087f5b;
+        cursor: pointer;
+      }
+
+      .btn {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        border: 1px solid #087f5b;
+        background-color: #fff;
+        stroke: #087f5b;
+        padding: 10px;
+      }
+      .btn:hover {
+        stroke: #f7f7f7;
+        background-color: #087f5b;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-number">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="btn btn-left"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M15.75 19.5L8.25 12l7.5-7.5"
+        />
+      </svg>
+
+      <a href="#" class="number">1</a>
+      <a href="#" class="number">2</a>
+      <a href="#" class="number num-selected">3</a>
+      <a href="#" class="number">4</a>
+      <a href="#" class="number">5</a>
+      <span>...</span>
+      <a href="#" class="number">23</a>
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="btn btn-right"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M8.25 4.5l7.5 7.5-7.5 7.5"
+        />
+      </svg>
+    </div>
+    <script></script>
+  </body>
+</html>
