@@ -492,7 +492,7 @@ body {
 }
 /**************************************/
 /* price-feature */
-.price-feature {
+.price-feature-section {
   padding: 9.6rem 0;
 }
 
@@ -578,4 +578,39 @@ body {
   font-size: 1.6rem;
   margin-top: 4.8rem;
   margin-bottom: 9.6rem;
+}
+.price-feature {
+  display: flex;
+  gap: 3.2rem;
+  list-style: none;
+}
+.price-feature-inner-icon {
+  margin-bottom: 5.2rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.price-feature-inner-icon::after {
+  content: "";
+  height: 5.5rem;
+  width: 5.5rem;
+  background-color: #faefe4;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+}
+.to-center {
+  margin-left: 1.5rem;
+  stroke-width: 4.2rem;
+}
+.price-feature-heading {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 2.2rem;
+}
+.price-feature-description {
+  font-size: 1.8rem;
+  letter-spacing: 0.75px;
+  line-height: 1.6;
 }
