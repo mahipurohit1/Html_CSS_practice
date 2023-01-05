@@ -492,6 +492,7 @@ body {
 }
 .gap {
   gap: 2rem;
+  overflow: hidden;
 }
 /**************************************/
 /* price-feature */
