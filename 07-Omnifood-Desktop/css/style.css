@@ -118,7 +118,7 @@ body {
 .heading-secondary {
   letter-spacing: -0.5px;
   line-height: 1.05;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 8rem;
   color: #333;
   font-size: 4.4rem;
@@ -489,4 +489,93 @@ body {
 }
 .gap {
   gap: 2rem;
+}
+/**************************************/
+/* price-feature */
+.price-feature {
+  padding: 9.6rem 0;
+}
+
+.starter {
+  border-radius: 1rem;
+  justify-self: end;
+  width: 70%;
+  border: 2px solid #fdf2e9;
+}
+.price-heading {
+  font-size: 2.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #cf711f;
+  text-align: center;
+  margin: 4.8rem 0px 2.2rem 0px;
+}
+.price-value {
+  font-size: 2.4rem;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+  margin-bottom: 2rem;
+}
+.price-value span {
+  font-size: 5.2rem;
+  padding-left: 1rem;
+}
+.price-description {
+  text-align: center;
+  font-size: 1.6rem;
+  letter-spacing: 0.75px;
+  line-height: 1.6;
+  margin-bottom: 4.4rem;
+}
+.price-item-ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  padding-left: 4.8rem;
+}
+.price-item-ul li {
+  display: flex;
+  gap: 1.8rem;
+}
+.inner-text-price {
+  font-size: 1.8rem;
+}
+.inner-text-price span {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.btn-starter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3.2rem 0;
+}
+.complete {
+  border-radius: 1rem;
+  width: 70%;
+  overflow: hidden;
+  background-color: #fdf2e9;
+  border: 2px solid #fdf2e9;
+  position: relative;
+}
+.complete::after {
+  content: "Best Value";
+  text-transform: uppercase;
+  padding: 1.2rem 5.8rem;
+  color: #333;
+  background-color: #ffd43b;
+  font-size: 1.4rem;
+  font-weight: 700;
+  position: absolute;
+  top: 3.7rem;
+  right: -4.4rem;
+  transform: rotate(47deg);
+}
+.price-tax-description {
+  font-size: 1.6rem;
+  margin-top: 4.8rem;
+  margin-bottom: 9.6rem;
 }
