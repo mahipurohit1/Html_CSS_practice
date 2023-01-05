@@ -107,6 +107,9 @@ body {
 .grid--4--cols {
   grid-template-columns: repeat(4, 1fr);
 }
+.grid--5--cols {
+  grid-template-columns: repeat(5, 1fr);
+}
 .primary-heading {
   font-size: 5.2rem;
   letter-spacing: -0.5px;
@@ -707,4 +710,63 @@ body {
     url(../img/eating.jpg);
   background-size: cover;
   background-position: center;
+}
+
+/************************************ */
+/* footer */
+.footer-section {
+  padding: 9.6rem 0;
+  border-top: 1px solid rgb(213, 213, 213);
+}
+.footer {
+  column-gap: 5.6rem;
+}
+.social-media-profile {
+  margin-top: 3.2rem;
+  list-style: none;
+  display: flex;
+  gap: 2.2rem;
+  margin-bottom: 5.2rem;
+}
+
+.social-media-profile li {
+  filter: grayscale(1);
+}
+.filled {
+  fill: #666;
+}
+.copyright {
+  font-size: 1.2rem;
+  letter-spacing: 0.75px;
+  line-height: 1.6;
+  color: #888;
+  margin-bottom: 3.2rem;
+}
+.footer-head {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 3.2rem;
+  color: #444;
+}
+.address {
+  font-size: 1.6rem;
+  letter-spacing: 0.75px;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 3.2rem;
+}
+.nav-footer-ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+.nav-footer-link:link,
+.nav-footer-link:visited {
+  font-size: 1.6rem;
+  letter-spacing: 0.75px;
+  line-height: 1.6;
+  color: #666;
+  text-decoration: none;
 }
