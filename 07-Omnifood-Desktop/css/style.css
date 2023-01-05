@@ -127,7 +127,7 @@ body {
   display: block;
   font-size: 1.6rem;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
   color: #cf711f;
   margin-bottom: 2.4rem;
 }
@@ -455,4 +455,38 @@ body {
 .see-all-recipe:active {
   color: #cf711f;
   border-bottom: 1px solid transparent;
+}
+/**************************************/
+/* TESTIMONIALS section */
+/* *********************************** */
+.section-testimonials {
+  padding: 9.6rem 3.2rem 9.6rem 4.8rem;
+  background-color: #fdf2e9;
+}
+
+.customer-img {
+  width: 25%;
+  border-radius: 50%;
+}
+
+.review-text {
+  font-size: 1.8rem;
+  letter-spacing: 0.75px;
+  line-height: 1.6;
+  margin-bottom: 1.6rem;
+  margin-top: 1.2rem;
+}
+.review-name {
+  font-size: 1.6rem;
+  color: #777;
+}
+.gallery-img {
+  width: 100%;
+  transition: all 0.4s;
+}
+.gallery-img:hover {
+  transform: scale(1.1);
+}
+.gap {
+  gap: 2rem;
 }
