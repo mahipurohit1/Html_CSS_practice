@@ -12,6 +12,51 @@ btnNav.addEventListener("click", function () {
   header.classList.toggle("nav-open");
 });
 
+const alllink = document.querySelectorAll("a:link");
+alllink.forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    const href = link.getAttribute("href");
+
+    if (href === "#") {
+      console.log(href);
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+
+    if (href !== "#" && href.startsWith("#")) {
+      const element = document.querySelector(href);
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+    if (link.classList.contains("main-nav-link")) {
+      header.classList.toggle("nav-open");
+    }
+  });
+});
+
+// sticky
+const hero = document.querySelector(".section-hero");
+const obs = new IntersectionObserver(
+  function (entries) {
+    entry = entries[0];
+    console.log(entry);
+    if (!entry.isIntersecting) {
+      document.body.classList.add("sticky");
+    }
+    if (entry.isIntersecting) {
+      document.body.classList.remove("sticky");
+    }
+  },
+  {
+    root: null,
+    threshold: 0,
+    rootMargin: "-80px",
+  }
+);
+obs.observe(hero);
+
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {
   var flex = document.createElement("div");
